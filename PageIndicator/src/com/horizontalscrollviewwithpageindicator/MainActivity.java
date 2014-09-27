@@ -13,6 +13,11 @@ public class MainActivity extends Activity {
 	
 	public Button Btn;
 	
+	public void selam()
+	{
+		
+	}
+	
 	public void init()
 	{
 		Btn = (Button) findViewById(R.id.BtnView);
@@ -23,6 +28,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.rela);
 		init();
+		selam();
 
 		
 		Btn.setOnClickListener(new OnClickListener() {
