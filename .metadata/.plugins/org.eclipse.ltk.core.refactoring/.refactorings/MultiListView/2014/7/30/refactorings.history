@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MultiListView/res/layout/activity_main.xml&apos; to &apos;main.xml&apos;" description="Rename resource &apos;activity_main.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_main.xml" name="main.xml" stamp="1406494331379" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MultiListView/res/layout/root.xml&apos; to &apos;row.xml&apos;" description="Rename resource &apos;root.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/root.xml" name="row.xml" stamp="1406500603212" updateReferences="true"/>
+</session>

@@ -1,0 +1,76 @@
+package com.example.havadrm;
+
+import org.json.JSONException;
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	
+	private TextView cityText;
+	private TextView havaDesc;
+	private TextView temp;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		init();
+			
+	}
+	
+	private void init()
+	{
+		
+		cityText = (TextView) findViewById(R.id.cityText);
+		havaDesc =  (TextView) findViewById(R.id.havaDesc);
+		temp = (TextView) findViewById(R.id.temp);
+		String city="Bursa,TR";
+		
+		JsonHavaTask task = new JsonHavaTask();
+		task.execute(new String[]{city});
+		
+
+	}
+	
+	private class JsonHavaTask extends AsyncTask<String, Void, Hava>
+	
+	{
+
+		@Override
+		protected Hava doInBackground(String... params) {
+			Hava hava = new Hava();
+			String data = ((new HttpJsonConnection()).getHavaDurumu(params[0]));
+			
+			try {
+				hava = HavaParser.getHava(data);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			
+			return hava;
+		}
+		
+		@Override
+		protected void onPostExecute(Hava hava) {
+			super.onPostExecute(hava);
+			//cityText.setText("Selam");
+
+			havaDesc.setText(String.valueOf(hava.bolge.getLatitude()));
+			temp.setText(String.valueOf(hava.sicaklik.getTemp()));
+			cityText.setText(hava.bolge.getCity());
+			//havaDesc.setText(hava.bolge.getLatitude());
+			//cityText.setText(hava.bolge.getLat());
+			
+		}
+		
+	}
+	
+
+
+	
+
+}

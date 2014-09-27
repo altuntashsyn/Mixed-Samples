@@ -1,0 +1,27 @@
+package com.example.kpsssorubankasi;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
+public class Sonuc extends Activity {
+
+	public Intent myIntent;
+
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.sonuc);
+		
+		Intent mIntent = getIntent();
+		int total = mIntent.getIntExtra("totalresult", 0);
+		//int trueresult = intent.getIntExtra("resulttrue", 0);
+
+
+				
+//	Toast.makeText(getApplicationContext(), total, Toast.LENGTH_LONG).show();
+	}
+}

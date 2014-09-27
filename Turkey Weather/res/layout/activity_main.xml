@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="1"
+		android:layout_marginTop="5dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/temp"
+            style="@style/tempStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cityText"
+            style="@style/tempStyle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp"
+            android:layout_centerHorizontal="true" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/havaDesc"
+            style="@style/tempStyle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cityText"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-thin" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/acik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/havaDesc"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/acikd" />
+        <ImageView
+            android:id="@+id/saganak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/havaDesc"
+			android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/saganakd" />
+        <ImageView
+            android:id="@+id/bulutlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/havaDesc"
+			android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bulutlud" />
+        <ImageView
+            android:id="@+id/snow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/havaDesc"
+			android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/snowd" />
+    </RelativeLayout>
+
+</LinearLayout>

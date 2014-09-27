@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HavaDRM/HavaDRM.iml" filepath="$PROJECT_DIR$/HavaDRM/HavaDRM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HazirSiniflar/HazirSiniflar.iml" filepath="$PROJECT_DIR$/HazirSiniflar/HazirSiniflar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeatherApp/WeatherApp.iml" filepath="$PROJECT_DIR$/WeatherApp/WeatherApp.iml" />
+    </modules>
+  </component>
+</project>
+
