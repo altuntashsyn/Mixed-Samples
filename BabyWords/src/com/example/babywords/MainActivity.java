@@ -32,8 +32,7 @@ public class MainActivity extends Activity {
 		myTextView.setTypeface(typeFace);
 		myTextView.setTextColor(Color.BLUE);
 		myTextView.setText("My Baby");
-		kopek = (ImageView) findViewById(R.id.imageView2);
-		cilek = (ImageView) findViewById(R.id.imageView1);
+
 
 		
 		kopek.setOnClickListener(new OnClickListener() {

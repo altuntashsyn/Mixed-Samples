@@ -10,172 +10,168 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
+
     <ScrollView
-   android:id="@+id/scroll_id"
-   android:layout_width="fill_parent"
-   android:layout_height="wrap_content"
-   android:scrollbars="vertical">
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    
-    <LinearLayout
-        android:id="@+id/pn4"
-        android:layout_width="300dp"
+        android:id="@+id/scroll_id"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="2dp"
-        android:orientation="vertical" >
+        android:scrollbars="vertical" >
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="260dp"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:textColor="#000000" >
-        </TextView>
-    </LinearLayout>
+            android:orientation="vertical" >
 
-    <LinearLayout
-        android:id="@+id/pnl"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/pn4"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical"
-        tools:context=".MainActivity" >
+            <LinearLayout
+                android:id="@+id/pn4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/back"
-            android:textColor="#C0C0C0" >
-        </TextView>
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000" >
+                </TextView>
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/text3"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/back" >
-        </TextView>
+            <LinearLayout
+                android:id="@+id/pnl"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pn4"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                tools:context=".MainActivity" >
 
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:textColor="#C0C0C0" >
+                </TextView>
 
-        <TextView
-            android:id="@+id/text4"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/back" >
-        </TextView>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back" >
+                </TextView>
 
-        <TextView
-            android:id="@+id/text5"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/back" >
-        </TextView>
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back" >
+                </TextView>
 
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back" >
+                </TextView>
 
-        <TextView
-            android:id="@+id/text6"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/back" >
-        </TextView>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back" >
+                </TextView>
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/pn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/pnl"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
-        android:background="@drawable/shadow"
-        tools:context=".MainActivity" >
+            <LinearLayout
+                android:id="@+id/pn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pnl"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shadow"
+                tools:context=".MainActivity" >
 
-        <Button
-            android:id="@+id/BtnBefore"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="0.5dp"
-            android:layout_weight="0.3"
-            android:background="#33b5e5"
-            android:textColor="#fff" />
+                <Button
+                    android:id="@+id/BtnBefore"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="0.3"
+                    android:background="#33b5e5"
+                    android:textColor="#fff" />
 
-        <Button
-            android:id="@+id/ButtonSnc"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="0.5dp"
-            android:layout_weight="0.3"
-            android:background="#33b5e5"
-            android:textColor="#fff" />
+                <Button
+                    android:id="@+id/ButtonSnc"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="0.3"
+                    android:background="#33b5e5"
+                    android:textColor="#fff" />
 
-        <Button
-            android:id="@+id/BtnNext"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="0.5dp"
-            android:layout_weight="0.3"
-            android:background="#33b5e5"
-            android:textColor="#fff" />
-    </LinearLayout>
+                <Button
+                    android:id="@+id/BtnNext"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="0.3"
+                    android:background="#33b5e5"
+                    android:textColor="#fff" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/pn3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/pn2"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
-        android:visibility="invisible"
-        android:orientation="vertical"
-        tools:context=".MainActivity" >
+            <LinearLayout
+                android:id="@+id/pn3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pn2"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                tools:context=".MainActivity" >
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
-            android:textColor="#C0C0C0" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:textColor="#C0C0C0" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView1"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
-            android:textColor="#C0C0C0" />
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView4"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
-            android:textColor="#C0C0C0" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:textColor="#C0C0C0" />
 
-
-    </LinearLayout>  
-            </LinearLayout>  
-    
-        </ScrollView>
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:textColor="#C0C0C0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

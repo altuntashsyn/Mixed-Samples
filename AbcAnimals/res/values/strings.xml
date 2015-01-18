@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources  xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name">AbcAnimals</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
