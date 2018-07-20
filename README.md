@@ -1,4 +1,4 @@
--lk-Coomitim
+Mixed Samples for beginners
 ============
 
-It includes many of android native examples for beginners
+It includes plenty of Android project examples for beginners. Please feel free to contribute and create issues
